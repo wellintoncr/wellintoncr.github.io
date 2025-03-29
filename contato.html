@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Página inicial</a>
+                </li>
+                <li>
+                    <a href="projetos.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="sobre_mim.html">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="minha_formacao.html">Minha formação</a>
+                </li>
+                <li class="active">
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h1>Caso queira entrar em contato comigo:</h1>
+            <form action="" method="post">
+                <div class="input-container">
+                    <label for="nome-input">Nome:</label>
+                    <input id="nome-input" type="text" name="nome" maxlength="50" placeholder="João da Silva" required>
+                </div>
+                <div class="input-container">
+                    <label for="email-input">Email:</label>
+                    <input id="email-input" type="email" name="email" maxlength="50" placeholder="joao@example.com" required>
+                </div>
+                <div class="input-container">
+                    <label for="mensagem-input">Mensagem:</label>
+                    <textarea id="mensagem-input" name="mensagem" maxlength="200" placeholder="Digite sua mensagem..." required></textarea>
+                </div>
+                <div class="button-container">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
