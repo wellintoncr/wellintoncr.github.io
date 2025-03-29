@@ -16,10 +16,11 @@ nav ul {
     overflow: hidden;
     background-color: var(--background-color-primaria);
 
-    & li {
+    li {
+        /* Em telas maiores, as opções do menu ficarão lado a lado */
         float: left;
 
-        & a {
+        a {
             /* Suaviza a transição de cor */
             transition: background-color 0.3s;
             display: block;
@@ -29,20 +30,22 @@ nav ul {
             text-decoration: none;
         }
 
-        & a:hover {
-            border: 1px solid red;
+        a:hover {
+            background-color: var(--background-color-hover-primaria);
         }
     }
+
     li.active {
         background-color: hsla(241, 96%, 31%, 0.5);
     }
+
+    /* Em telas pequenas, as opções do menu ficarão empilhadas */
+    @media (max-width: 600px) {
+        li {
+            float: none;
+        }
+    }
 }
-
-
-
-
-
-
 
 .content {
     padding: 20px;
@@ -76,6 +79,7 @@ nav ul {
             display: flex;
             justify-content: center;
             margin: 10px 0;
+
             button {
                 width: 80px;
                 height: 40px;
@@ -93,26 +97,23 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    .card {
+        background-color: hsla(241, 100%, 46%, 0.075);
+        max-width: 500px;
+        min-width: 300px;
+        border-radius: 15px;
+        padding: 10px;
+        border: 2px solid hsla(241, 100%, 46%, 0.07);
+        box-shadow: 2px 2px 2px 2px hsla(241, 100%, 46%, 0.151);
+
+        h4 {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
 }
 
-.card {
-    background-color: hsla(241, 100%, 46%, 0.075);
-    max-width: 500px;
-    min-width: 300px;
-    border-radius: 15px;
-    padding: 10px;
-    border: 2px solid hsla(241, 100%, 46%, 0.07);
-    box-shadow: 2px 2px 2px 2px hsla(241, 100%, 46%, 0.151);
-}
-
-.card h4 {
-    text-align: center;
-    font-size: 18px;
-}
-
-.card hr {
-    color: hsla(241, 100%, 46%, 0.1)
-}
 
 .summary-container {
     display: flex;
