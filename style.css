@@ -87,6 +87,7 @@ nav ul {
                 color: white;
                 font-size: large;
                 border-radius: 5px;
+                cursor: pointer;
             }
         }
 
