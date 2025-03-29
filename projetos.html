@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projetos</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Página inicial</a>
+                </li>
+                <li class="active">
+                    <a href="projetos.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="aaaa">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="aaaa">Minha formação</a>
+                </li>
+                <li>
+                    <a href="aaaa">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h1>Projetos</h1>
+            <p>
+                Ao longo dos anos, consegui desenvolver algumas aplicações Web e listarei as mais relevantes:
+            </p>
+            <div class="container">
+                <div class="card">
+                    <h4>
+                        <a href="https://github.com/wellintoncr/fii">Extração de dados sobre Fundos Imobiliários</a>
+                    </h4>
+                    <hr>
+                    <p>Esta aplicação foi desenvolvida com Python e Docker e não possui interface gráfica.</p>
+                    <p>O objetivo era conseguir extrair informações sobre Fundos de Investimento Imobiliário (FIIs).</p>
+                    <p>Para obter os dados, um <i>webscrapper</i> foi usado para acessar a interface da Bovespa e também a <i>API</i> chamada AlphaAdvantage.</p>
+                    <p>Como o processo de extração era lento, ele era dividido em etapas para não houvesse perda de informação durante a extração.</p>
+                </div>
+                <div class="card">
+                    <h4>
+                        <a href="https://github.com/wellintoncr/django-wiki">Uma wiki simplificada sobre Django</a>
+                    </h4>
+                    <hr>
+                    <p>Criar aplicações com o framework Django (em Python) permite agilizar várias etapas do processo de desenvolvimento.</p>
+                    <p>Entretanto, às vezes eu tenho dificuldades em recordar algum conceito e acabava gastando tempo pesquisando novamente sobre o assunto.</p>
+                    <p>A partir desse problema, criei essa Wiki - que pode ser acessada <a href="https://wellintoncr.github.io/django-wiki/">aqui</a>.</p>
+                    <p>O objetivo nunca foi substituir a extensa documentação do framework, mas oferecer uma rápida solução para problemas que eu já enfrentei.</p>
+                </div>
+                <div class="card">
+                    <h4>
+                        <a href="https://github.com/wellintoncr/fitness-buddy">Um sistema para controle de treinos de musculação</a>
+                    </h4>
+                    <hr>
+                    <p>Durante os treinos de musculação, eu sentia falta de uma ferramenta simples para controle das cargas usadas.</p>
+                    <p>Apesar de existirem vários sites e aplicativos por aí, eu percebia que era difícil algum serviço oferecer a opção de exportar os dados e, consequentemente, reutilizar os dados em outro serviço.</p>
+                    <p>A partir dessa necessidade, criei esta aplicação super simples. Ela não possui nenhum servidor, salvando todas as informações no <i>localStorage</i> do navegador.</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
