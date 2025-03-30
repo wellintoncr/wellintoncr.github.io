@@ -1,6 +1,5 @@
 :root {
-    --background-color-primaria: hsla(241, 100%, 46%, 0.5);
-    --background-color-hover-primaria: hsla(241, 100%, 46%, 0.315);
+    --background-color-primary: hsla(241, 100%, 46%, 0.5);
 }
 
 body {
@@ -14,7 +13,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--background-color-primaria);
+    background-color: var(--background-color-primary);
 
     li {
         /* Em telas maiores, as opções do menu ficarão lado a lado */
@@ -31,7 +30,7 @@ nav ul {
         }
 
         a:hover {
-            background-color: var(--background-color-hover-primaria);
+            background-color: hsla(241, 100%, 46%, 0.315);
         }
     }
 
@@ -48,7 +47,7 @@ nav ul {
 }
 
 .content {
-    padding: 20px;
+    padding: 20px 200px;
 
     form {
         background-color: #eee;
@@ -83,7 +82,7 @@ nav ul {
             button {
                 width: 80px;
                 height: 40px;
-                background-color: var(--background-color-primaria);
+                background-color: var(--background-color-primary);
                 color: white;
                 font-size: large;
                 border-radius: 5px;
@@ -101,7 +100,7 @@ nav ul {
 
     .card {
         background-color: hsla(241, 100%, 46%, 0.075);
-        max-width: 500px;
+        max-width: 400px;
         min-width: 300px;
         border-radius: 15px;
         padding: 10px;
@@ -135,6 +134,16 @@ nav ul {
 @media (max-width: 600px) {
     .summary-container {
         justify-content: space-around;
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        padding: 20px;
+    }
+
+    .container {
+        justify-content: center;
     }
 }
 
